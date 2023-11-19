@@ -3,9 +3,9 @@ import re
 import cx_Oracle
 import time
   
-url = "https://gpcmp.grameenphone.com/gpcmpapi/messageplatform/controller.home?username=BeximcoLPG1&password=Admin123@&apicode=1&msisdn=#&countrycode=880&cli=~~&messagetype=1&message=***&messageid=0"
+url = ""
 
-con = cx_Oracle.connect('lpg/lpg7778@192.168.188.15/meldb')
+con = cx_Oracle.connect('')
 cur_oracle = con.cursor()
 
 while True:
@@ -41,7 +41,7 @@ while True:
 				print("Something went wrong")
 	except Exception as e:
 		try:
-			con = cx_Oracle.connect('lpg/lpg7778@192.168.188.15/meldb')
+			con = cx_Oracle.connect('')
 			cur_oracle = con.cursor()		
 		except Exception as e:
 			pass
