@@ -3,7 +3,7 @@ import re
 import cx_Oracle
 import time
   
-url = "https://gpcmp.grameenphone.com/gpcmpapi/messageplatform/controller.home?username=BeximcoLPG1&password=pass&apicode=1&msisdn=#&countrycode=880&cli=~~&messagetype=1&message=***&messageid=0"
+url = ""
 
 con = cx_Oracle.connect('lpg/lpg@ip/orcl')
 cur_oracle = con.cursor()
